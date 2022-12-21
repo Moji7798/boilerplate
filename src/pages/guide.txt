@@ -1,0 +1,13 @@
+# pages directory
+
+## pages directory is considered for route components of the app.
+## the base structure is not restricted.
+## the suggested structure
+
+/pages
+      /[page1]/[page1].js|ts
+      /[page2]/[page2].js|ts  
+      /[page3]/[page3].js|ts  
+      ...
+
+      

@@ -1,0 +1,14 @@
+# utils directory
+
+## utils directory is considered for utilities necessary for the project.
+## the base structure is restricted.
+## the structure
+
+/utils
+      /functions.js|ts
+      /variables.js|ts 
+
+## a functions.js file is created for instance.
+## functions are class based.
+
+## a variables.js file is created for instance.

@@ -1,0 +1,33 @@
+# services directory
+
+## services directory is considered for services necessary for the project (network request, ...).
+## the base structure is restricted.
+## the structure
+
+/services
+      /api.js
+
+## please provide a [path-to-login-page] in the logout function.      
+
+
+## an api object is exported from this file.
+## use it like shown below. 
+
+## a GET request to .../api/common/categories => 
+await api.common({tail: "categories"})
+
+## a POST request to .../api/authenticate/login =>
+await api.authenticate({tail: "login", method: "post", payload: {username: "****", password: "****"}})
+
+## a GET request to .../api/reports?PageSize=10&PageNumber=1 =>
+await api.reports({
+    params: {
+        PageSize: 10,
+        PageNumber: 1
+    }
+})
+
+## a GET request to .../api/report/[reportId] =>
+await api.report({
+    id: [reportId]
+})

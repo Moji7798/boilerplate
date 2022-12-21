@@ -1,0 +1,47 @@
+# hooks directory
+
+## hooks directory is considered for custom hooks necessary for the project.
+## the base structure is not restricted.
+## the suggested structure
+
+/hooks
+      /useSomething.js
+
+## some useful hooks has been placed here.
+## feel free to use or remove them.
+
+## useClick => a hook to detect click outside of an element.
+##             parameters: 
+                element => the element which we want to detect click outside of.
+                event => the event which we want to keep track of. default is click.
+                whitelist => an array consists of elements which we don't care if clicked on.
+
+               return values: [array]
+                first element: a state indicating wether the element has been clicked outside.
+                second element: a functions to manually set the state. 
+
+
+## useResize => a hook to detect window resize and keep track of dimensions.
+##             parameters: no parameters needed.
+
+               return values: {object}
+                first parameter: a state showing window current width.
+                second parameter: a state showing window current height.
+
+## useScroll => a hook to detect document scroll and keep track of scrolls.
+##             parameters: no parameters needed.
+
+               return values: {object}
+                first parameter: a state showing document current vertical scroll.
+                second parameter: a state showing document current horizontal scroll.
+                third parameter: a state showing document current scroll direction ("up" or "down").
+
+## useTimer => a hook to start, stop, and keep track of given time.
+##             parameters: 
+               onFinish => an optional callback which will fire when timer is done. 
+
+               return values: {object}
+                first parameter: a function to start the timer. gets a time parameter (default 120 seconds).
+                second parameter: a function to stop the timer.
+                third parameter: a state indicating current time.
+                fourth parameter: a state indicating wether the timer is running or has been stopped.

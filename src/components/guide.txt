@@ -1,0 +1,11 @@
+# components directory
+
+## components directory is considered for components necessary for the project.
+## the base structure is not restricted.
+## the suggested structure
+
+/components
+      /[component1]/[component1].js|ts
+      /[component2]/[component2].js|ts
+      /[component3]/[component3].js|ts
+      ...

@@ -1,0 +1,12 @@
+# store directory
+
+## store directory is considered for storage functionality of the app.
+## either redux or react context or ...
+## the base structure is not restricted.
+## the suggested structure
+
+/store
+      /Context.js|ts
+      /reducer.js|ts 
+
+## any other strcuture is acceptable.

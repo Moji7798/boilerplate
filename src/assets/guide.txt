@@ -1,0 +1,12 @@
+# assets directory
+
+## assets directory is considered for assets necessary for the project.
+## such as images, fonts, or common styles (tailwind configurations, bootstrap and ... goes here).
+## the base structure is not restricted.
+## the suggested structure
+
+/assets
+      /images/...
+      /fonts/...
+      /styles/...  
+
